@@ -2,6 +2,7 @@ import java.text.NumberFormat;
 
 public class Election {
     public static void main(String[] args) {
+        
         int ny1 = 314159;
         int nj1 = 89008;
         int cn1 = 213451;
@@ -18,7 +19,7 @@ public class Election {
 
         NumberFormat percent = NumberFormat.getPercentInstance();
         percent.setMaximumFractionDigits(2);
-        System.out.println("Candidate A: " + percent.format(a_percent));
-        System.out.println("Candidate C: " + percent.format(c_percent));
+        System.out.println("Awbrey: " + percent.format(a_percent));
+        System.out.println("Martinez: " + percent.format(c_percent));
     }
 }
