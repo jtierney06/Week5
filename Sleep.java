@@ -26,8 +26,10 @@ public class Sleep {
         input.close();
         int years = year2 - year;
         int years_to_days = years * 365;
-        int days = month - month2;
-        int days_alive = years_to_days + days;
+        int months = month2 - month;
+        int months_to_days = months * 30;
+        
+        int days_alive = years_to_days + months_to_days;
         System.out.println("You have been alive for: " + days_alive + " days");
         int hours = days_alive * 8;
         System.out.println("You have slept for " + hours + " hours");
